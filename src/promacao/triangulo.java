@@ -1,0 +1,31 @@
+package promacao;
+
+
+import java.util.Locale;
+import java.util.Scanner;
+
+import entities.rectangle;
+
+public class triangulo {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter rectangle width and height");
+		
+		rectangle rect = new rectangle();
+		
+		rect.width =  sc.nextDouble();
+		rect.heigth = sc.nextDouble();
+		System.out.printf("AREA = %.2f%n", rect.area());
+		System.out.printf("PERIMETER = %.2f%n" , rect.perimeter());
+		System.out.printf("DIAGONAL = %.2f%n" , rect.diagonal());
+		
+		
+		
+		
+		sc.close();
+	}
+
+}
